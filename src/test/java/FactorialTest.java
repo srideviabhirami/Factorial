@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class FactorialTest {
     @Test
-    void shouldReturnTheFactorialAs1When0isGiven() {
+    void shouldReturnTheFactorialOf0As1() {
         Factorial factorial = new Factorial(0);
         int expectedValue = 1;
         int actualValue = factorial.getFactorial();
@@ -13,7 +12,7 @@ public class FactorialTest {
     }
 
     @Test
-    void shouldReturnTheFactorialAs1When1isGiven() {
+    void shouldReturnTheFactorialOf1As1() {
         Factorial factorial = new Factorial(1);
         int expectedValue = 1;
         int actualValue = factorial.getFactorial();
@@ -21,7 +20,7 @@ public class FactorialTest {
     }
 
     @Test
-    void shouldReturnTheFactorialAs2When2isGiven() {
+    void shouldReturnTheFactorialOf2As2() {
         Factorial factorial = new Factorial(2);
         int expectedValue = 2;
         int actualValue = factorial.getFactorial();
@@ -29,7 +28,7 @@ public class FactorialTest {
     }
 
     @Test
-    void shouldReturnFactorialAs6When3isGiven() {
+    void shouldReturnFactorialOf3As6() {
         Factorial factorial = new Factorial(3);
         int expectedValue = 6;
         int actualValue = factorial.getFactorial();
@@ -37,7 +36,7 @@ public class FactorialTest {
     }
 
     @Test
-    void shouldReturnFactorialAs24When4isGiven() {
+    void shouldReturnFactorialOf4As24() {
         Factorial factorial = new Factorial(4);
         int expectedValue = 24;
         int actualValue = factorial.getFactorial();
@@ -45,7 +44,7 @@ public class FactorialTest {
     }
 
     @Test
-    void shouldReturnFactorialAs120When5isGiven() {
+    void shouldReturnFactorialOf5As120() {
         Factorial factorial = new Factorial(5);
         int expectedValue = 120;
         int actualValue = factorial.getFactorial();
@@ -53,7 +52,7 @@ public class FactorialTest {
     }
 
     @Test
-    void shouldReturnFactorialAs362990When10isGiven() {
+    void shouldReturnFactorialOf10As3628800() {
         Factorial factorial = new Factorial(10);
         int expectedValue = 3628800;
         int actualValue = factorial.getFactorial();
